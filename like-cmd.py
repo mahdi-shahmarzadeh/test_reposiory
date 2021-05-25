@@ -93,27 +93,22 @@ while True:
         else:
             print("list is empty!")
     
-    elif question == "delete todo text": # this part has error and bug...
-        if todo_list:
-            for lists in todo_list:
-                print(f"day [{lists[0]}] todo test is : [{lists[1]}]")
-            while True:
-                try:
-                    get_deleting_day = int(input("Enter todo day to delete them...:"))
-                    for lists in todo_list:
-                        pass
-                    if get_deleting_day == lists[0]:
-                        lists.pop()
-                        print(f"deleted {lists[1]}")
-                    else:
-                        print(f"not found day{get_deleting_day}")
-                except ValueError:
-                    print(get_deleting_day)
-
-    elif question == "help" or question == "commands":
-        pass
-        #TODO
-        #FIXME
-                        
+#     elif question == "delete todo text": # this part has error and bug...
+#         if todo_list:
+#             for lists in todo_list:
+#                 print(f"day [{lists[0]}] todo test is : [{lists[1]}]")
+#             while True:
+#                 try:
+#                     get_deleting_day = int(input("Enter todo day to delete them...:"))
+#                     for lists in todo_list:
+#                         pass
+#                     if get_deleting_day == lists[0]:
+#                         lists.pop()
+#                         print(f"deleted {lists[1]}")
+#                     else:
+#                         print(f"not found day{get_deleting_day}")
+#                 except ValueError:
+#                     print(get_deleting_day)
+              
     else:
         print(Fore.LIGHTRED_EX+f"command \"{question}\" not found..."+Fore.RESET)
